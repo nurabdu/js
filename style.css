@@ -1,0 +1,21 @@
+.main{
+display: grid;
+grid-template-areas: 
+"h h h"
+"n c c";
+grid-template-rows: 50px 1fr;
+grid-template-columns: 2fr 10fr;
+
+}
+.header{
+    grid-area: h;
+    background-color: aqua;
+}
+.nav{
+    grid-area: n;
+}
+.content{
+    grid-area: c;
+    width: 700px;
+    height: 500px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Html Document</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        const img1 = "url('first.jpg')"
+        const img2 = "url('secnd.jpg')"
+        const img3 = "url('third.jpg')"
+        const img4 = "url('four.jpg')"
+        const img5 = "url('five.jpg')"
+
+       function ChangeCont(otherCont){
+           let elem = document.getElementById("cont");
+           elem.style.backgroundImage = otherCont;
+       }
+    </script>
+    <div class="main">
+        <header class="header">header</header>
+        <div class="nav"> 
+            <ul>
+                <li><button onclick="ChangeCont(img1)"> Team </button></li>
+                <li><button onclick="ChangeCont(img2)"> Design </button></li>
+                <li><button onclick="ChangeCont(img3)"> libraryes </button></li>
+                <li><button onclick="ChangeCont(img4)"> Frameworcks </button></li>
+                <li><button onclick="ChangeCont(img5)">  Data </button></li>
+            </ul>
+        </div>
+        <div class="content" id="cont"> content</div>
+    </div>
+</body>
+
+</html>
+<!--  document.body.className.content.style.backgroundImage = "url('first.jpg')"; -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>getElementById example</title>
+  <script>
+  function changeColor(newColor) {
+    var elem = document.getElementById("para1");
+    elem.style.color = newColor;
+  }
+  </script>
+</head>
+<body>
+  <p id="para1">Some text here</p>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+</body>
+</html> -->
